@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Countdown ⏰</title>
+  <title>Countdown</title>
 
   <style>
     :root {
@@ -85,21 +85,19 @@
   <main class="card">
     <div class="art">⏰</div>
 
-    <h1>Didn’t you say we needed a new way to count down?</h1>
+    <h1>See you for dinner @ Nour!</h1>
 
     <div class="countdown">
-      <div class="date-label" id="dateLabel">Thursday 19-Feb</div>
+      <div class="date-label" id="dateLabel">Friday 6-Feb</div>
       <div class="days" id="timeRemaining"></div>
   </div>
 
     
-    <!-- HINT -->
-    <div class="hint" id="hint">...but who's counting 😏</div>
     
   </main>
 
   <script>
-    const targetDate = new Date("February 19, 2026 00:00:00").getTime();
+    const targetDate = new Date("February 06, 2026 18:15:00").getTime();
     const dateLabelEl = document.getElementById("dateLabel");
     const timeRemainingEl = document.getElementById("timeRemaining");
 
@@ -108,8 +106,8 @@
       const diff = targetDate - now;
 
       if (diff <= 0) {
-        dateLabelEl.textContent = "Thursday 19-Feb";
-        timeRemainingEl.textContent = "It’s today! 💘";
+        dateLabelEl.textContent = "Thursday 06-Feb";
+        timeRemainingEl.textContent = "So soon!";
 
         return;
       }
@@ -122,7 +120,7 @@
         (diff % (1000 * 60 * 60)) / (1000 * 60)
       );
 
-      dateLabelEl.textContent = "Thursday 19-Feb";
+      dateLabelEl.textContent = "Friday 06-Feb";
 
       timeRemainingEl.textContent =
       `${days} days · ${hours} hours · ${minutes} minutes`;
