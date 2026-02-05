@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Choose Your Fighter 💥</title>
+  <title>Choose Your Fighter</title>
 
   <style>
     :root {
@@ -113,12 +113,12 @@
     <form class="fighters">
       <label>
         <input type="radio" name="fighter" />
-        <div class="option">Nature 🌿⛰️🌳</div>
+        <div class="option">🎁 Something you've been hinting at </div>
       </label>
 
       <label>
         <input type="radio" name="fighter" />
-        <div class="option">Beach 🌊🐚🫧</div>
+        <div class="option">💝 Mystery Experience</div>
       </label>
 
     </form>
@@ -133,7 +133,7 @@
     const selectedInput = document.querySelector('input[name="fighter"]:checked');
 
     if (!selectedInput) {
-      alert("Please choose your fighter first 💕");
+      alert("Please choose your fighter first 💥");
       return;
     }
 
@@ -147,11 +147,11 @@
     await sendDateByEmail(chosenDate);
 
     // 5. Navigate to next page
-    window.location.href = "see-you-soon.html";
+    window.location.href = "selection-confirmed.html";
   });
 
   async function sendDateByEmail(selectedDate) {
-    const response = await fetch("https://formspree.io/f/mdadqwly", {
+    const response = await fetch("https://formspree.io/f/mkovwjdw", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
