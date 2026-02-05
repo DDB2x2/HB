@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>What Day Is It Today?</title>
+  <title>What Day Is It?</title>
 
   <!-- Confetti library -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
@@ -58,19 +58,10 @@
     }
 
     h1 {
-      font-size: 36px;
-      margin: 16px 0 8px;
-	  font-weight: 600;
+      font-size: clamp(26px, 4vw, 44px);
+      margin: 12px 0 18px;
     }
 
-      h2 {
-      font-size: 24px;
-      margin: 16px 0 8px;
-      font-weight: 400;
-      margin-bottom: 50px;
-    }
-    }
-	  
     .button-zone {
       position: relative;
       width: min(520px, 92%);
@@ -168,8 +159,8 @@
   	🎂
 	</div>
       
-    <h1>Carli Chank-a-bali,<br> <h/1>
-	<h2>A little birdie told us it's your birthday today - is that true?</h2>
+    <h1>Carli Chank-a-bali,<br>
+	A little birdie told us it's your birthday today - is that true?</h1>
 
     <section class="button-zone" id="zone">
       <button id="yesBtn">Yes</button>
@@ -309,9 +300,6 @@
   </script>
 </body>
 </html>
-
-
-
 
 
 
